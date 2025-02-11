@@ -11,16 +11,21 @@ function Banner() {
   return (
     <div className={`main ${isSwapped ? 'swapped' : ''}`} onClick={handleClick}>
       <div className={`main-left ${isSwapped ? 'hidden' : ''}`}>
-        <p>
-          I am a passionate website developer, bringing creative ideas to life through code.  
-          With expertise in React, Vite, and Tailwind CSS, I build fast and responsive web applications.  
-          I enjoy solving problems and optimizing user experiences for seamless interaction.  
-          From frontend design to backend logic, I craft websites that are both functional and visually appealing.  
-          Always eager to learn and innovate, I stay up to date with the latest web technologies.
+        
+                            <h1>About me</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore corrupti est r
+          ecusandae asperiores accusamus ipsum delectus rem voluptatem, laborum quaerat
+           nam repudiandae elige#
+          ndi excepturi vitae error doloremque magnam soluta odit?
+
         </p>
+        <button className='btn'>
+          read more
+        </button>
+       
       </div>
       <div className={`main-right ${isSwapped ? 'visible' : ''}`}>
-        <img src="src/assets/kk.jpg" alt="Banner" className='banner-image' />
+        <img src="src/assets/one.png" alt="Banner" className='banner-image' />
       </div>
     </div>
   );

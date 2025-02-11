@@ -1,0 +1,54 @@
+.skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Align items vertically */
+    margin: 20px 0;
+    gap: 20px; /* Space between items */
+  }
+  
+  .skill {
+    text-align: center;
+    width: 120px; /* Adjust to make all boxes equal */
+    transition: transform 0.3s;
+  }
+  
+  .skill-image {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .skill:hover {
+    transform: scale(1.1);
+  }
+  
+  .text {
+    border:2px solid orange;
+    border-top:none;
+    height:50px;
+    text-align: center;
+    color: orange;
+    font-size: 40px;
+    font-weight:bold;
+    padding-bottom:60px;
+  }
+  
+  h3 {
+    color: orange;
+    font-size: 18px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-align: center;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .skills-section {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .skill {
+      width: auto; /* Allow items to adjust on small screens */
+    }
+  }
+  
