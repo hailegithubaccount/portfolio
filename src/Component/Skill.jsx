@@ -2,7 +2,7 @@ import React from 'react';
 
 import cssLogo from '../assets/git.png'; 
 import vite from '../assets/logo.svg'; 
-import Laravel from '../assets/laravel.svg.png'; 
+import Laravel from '../assets/LL.png'; 
 import reactnative from '../assets/react-native-1.svg'; // Adjusted path// Corrected import statement
 import mysql from '../assets/mysqll.png'; 
 import git from '../assets/gitk.png'; 
