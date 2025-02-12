@@ -13,7 +13,7 @@ const Project = () => {
       id: 1,
       image: project1,
       title: "Azmera Trade",
-      github: "https://github.com/user/project1",
+      github: "https://github.com/hailegithubaccount/second-hackton-demo-app.git",
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ const Project = () => {
       id: 3,
       image: project3,
       title: "Smart Menu",
-      github: "https://github.com/user/project3",
+      github: "https://github.com/hailegithubaccount/smartMenu.git",
     },
     {
       id: 4,
@@ -37,13 +37,13 @@ const Project = () => {
       id: 5,
       image: project5,
       title: "fitclub",
-      github: "https://github.com/user/project4",
+      github: "https://github.com/hailegithubaccount/fitClub-by-react.git",
     },
     {
       id: 6,
       image: project6,
       title: "Hotel Website",
-      github: "https://github.com/user/project4",
+      github: "https://github.com/hailegithubaccount/forhotel.git",
     },
   ];
 

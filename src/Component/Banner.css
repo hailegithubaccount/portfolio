@@ -3,8 +3,23 @@
   flex-wrap: wrap;
   transition: transform 0.5s ease;
   margin-bottom: 100px;
-  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.social-icons {
+  display: flex;
   justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #333;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: orange;
 }
 
 .Haile {
@@ -15,19 +30,15 @@ span {
   font-size: 50px;
 }
 
-.main-left, .main-right {
+.main-left {
   flex: 1;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
+  text-align: left;
   background-color: black;
   padding: 20px;
-}
-
-.main-left {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
 }
 
 .main-left h1 {
@@ -39,7 +50,7 @@ span {
 }
 
 .main-left h2 {
-  font-size: 20px;
+  font-size: 40px;
   color: white;
   margin-top: 10px;
 }
@@ -48,10 +59,8 @@ span {
   background-color: orange;
   color: white;
   font-size: 20px;
-  padding: 12px 25px;
   border: none;
   border-radius: 5px;
-  margin: 20px auto;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -61,10 +70,22 @@ span {
   color: orange;
 }
 
+.main-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 20px;
+}
+
 .banner-image {
+  margin-top:50px;
   width: 400px;
   height: auto;
+  position: absolute;
   transition: transform 0.3s ease;
+
 }
 
 .banner-image:hover {
@@ -72,27 +93,31 @@ span {
 }
 
 .banner-image1 {
+  margin-top:50px;
   width: 280px;
-  height: auto;
-  margin-right: -150px;
+  height:auto;
+  margin-left:-300px;
+
+
 }
 
-/* Handle swapped layout */
-.swapped {
-  flex-direction: row-reverse;
-}
-
-/* === Responsive Design === */
-@media (max-width: 1024px) {
+/* Responsive Design */
+@media (max-width: 760px) {
   .main {
     flex-direction: column;
     text-align: center;
+    height:600px;
   }
 
   .main-left, 
   .main-right {
     width: 100%;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main-right{
+    
   }
 
   .main-left h1 {
@@ -109,7 +134,7 @@ span {
   }
 
   .banner-image {
-    width: 90%;
+    width: 100%;
     max-width: 300px;
   }
 
