@@ -50,7 +50,6 @@ const Project = () => {
   return (
     <div>
       <div className="tsuf">My Projects</div>
-
       <div className="projects-grid">
         {projects.map((project) => (
           <div key={project.id} className="project-card">

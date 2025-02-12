@@ -10,15 +10,16 @@ const Header = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">My Website</div>
+      <div className="logo">portfolio</div>
       <div className="menu-icon" onClick={toggleMenu}>
-        {isMenuOpen ? '✖' : '☰'} {/* Hamburger icon or X icon */}
+        {isMenuOpen ? '✖' : '☰'} {/* Show "X" when menu is open */}
       </div>
       <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#banner" onClick={toggleMenu}>Home</a></li>
+        <li><a href="#about" onClick={toggleMenu}>About</a></li>
+        <li><a href="#skills" onClick={toggleMenu}>Skills</a></li>
+        <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
+        <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
       </ul>
     </nav>
   );

@@ -24,7 +24,7 @@ function Banner() {
       <div className={`main-left ${isSwapped ? 'hidden' : ''}`}>
         <h1>
           <span>
-            Hello! I'm  
+            Hello! I'm - 
             <ReactTyped
               className="Haile"
               strings={["Haile Michael Eshetu", ""]}
@@ -33,9 +33,9 @@ function Banner() {
               loop
             />
           </span> 
-          <h2>I am a React Native and React (Vite) Developer</h2>
         </h1>
-        
+        <h2>I am a React Native and React (Vite) Developer</h2>
+
         {/* Button to Download CV */}
         <button className='btn' onClick={handleDownload}>
           Download CV
@@ -43,8 +43,8 @@ function Banner() {
       </div>
       
       <div className={`main-right ${isSwapped ? 'visible' : ''}`}>
-        <img src="src/assets/hero_image_back.png" alt="Banner" className='banner-image1' />
-        <img src="src/assets/one.png" alt="Banner" className='banner-image' />
+        <img src="src/assets/hero_image_back.png" alt="Background" className='banner-image1' />
+        <img src="src/assets/one.png" alt="Profile" className='banner-image' />
       </div>
     </div>
   );

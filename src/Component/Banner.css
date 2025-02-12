@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   transition: transform 0.5s ease;
   margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;
 }
 
 .Haile {
@@ -19,31 +21,27 @@ span {
   align-items: center;
   justify-content: center;
   background-color: black;
+  padding: 20px;
 }
 
 .main-left {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .main-left h1 {
   width: 100%;
-  margin: 20px;
   font-size: 30px;
   font-weight: 500;
   color: white;
-  text-align: center;
   letter-spacing: 0.5px;
 }
 
-.main-left p {
-  width: 100%;
-  margin: 20px;
-  font-size: 25px;
-  font-weight: 500;
-  color: orange;
-  text-align: center;
-  letter-spacing: 0.5px;
+.main-left h2 {
+  font-size: 20px;
+  color: white;
+  margin-top: 10px;
 }
 
 .btn {
@@ -53,11 +51,7 @@ span {
   padding: 12px 25px;
   border: none;
   border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 20px auto;
-  width: fit-content;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -68,108 +62,58 @@ span {
 }
 
 .banner-image {
-  margin-top: 20px;
   width: 400px;
   height: auto;
+  transition: transform 0.3s ease;
+}
+
+.banner-image:hover {
+  transform: scale(1.05);
 }
 
 .banner-image1 {
   width: 280px;
   height: auto;
-  margin-right: -190px;
+  margin-right: -150px;
 }
 
-.banner-image:hover {
-  width: 410px;
-}
-
-.main-right {
-  background-color: black;
-  padding: 20px;
-}
-
-h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-p {
-  font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-.cta-button {
-  padding: 10px 20px;
-  font-size: 1em;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.cta-button:hover {
-  background-color: #0056b3;
-}
-
+/* Handle swapped layout */
 .swapped {
   flex-direction: row-reverse;
 }
 
-/* === 🛠 MOBILE RESPONSIVENESS === */
-@media (max-width: 768px) {
+/* === Responsive Design === */
+@media (max-width: 1024px) {
   .main {
-    width: 100%;
     flex-direction: column;
-    height: auto;
-    padding: 20px;
-  }
-
-  .banner-image,
-   {
-    width: 90%;
-    max-width: 300px;
-    height: auto;
-    margin: 10px auto;
-  }
-
-  .btn {
-    width: auto;
-    font-size: 14px;
-    padding: 10px 15px;
-  }
-
-  span {
-    font-size: 24px;
-  }
-
-  .main-left h1 {
-    font-size: 18px;
-  }
-
-  .main-left p {
-    font-size: 16px;
+    text-align: center;
   }
 
   .main-left, 
   .main-right {
-    flex: none;
     width: 100%;
-    text-align: center;
+    justify-content: center;
   }
 
-  .main-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+  .main-left h1 {
+    font-size: 24px;
+  }
+
+  .main-left h2 {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 20px;
   }
 
   .banner-image {
-    max-width: 90%;
+    width: 90%;
+    max-width: 300px;
   }
-  .banner-image1{
-    display:none;
 
+  .banner-image1 {
+    display: none;
   }
 }
