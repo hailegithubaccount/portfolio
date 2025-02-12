@@ -1,3 +1,28 @@
+@keyframes zigzagVertical {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateX(20px) translateY(-20px);
+  }
+  50% {
+    transform: translateX(-20px) translateY(20px);
+  }
+  75% {
+    transform: translateX(20px) translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
 .skills-section {
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +31,8 @@
     margin: 20px 0;
     gap: 20px; 
     margin-bottom:100px;
-    margin-left:50px;/* Space between items */
+    margin-left:50px;
+    animation: zigzagVertical 5s ease-in-out infinite;/* Space between items */
   }
   
   .skill {
@@ -24,9 +50,7 @@
     transform: scale(1.1);
   }
   
-  .text {
-    border:2px solid orange;
-    border-top:none;
+  .tsuf{
     height:50px;
     text-align: center;
     color: orange;

@@ -1,74 +1,73 @@
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-    margin-left:150px;
-  }
-  
-  .project-card {
-    position: relative;
-    width: 100%;
-    max-width: 300px;
-    height: 200px; /* Fixed height */
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .project-card img {
-    width: 100%;
-    height: 100%; /* Ensures all images have the same height */
-    object-fit: cover; /* Ensures images fill the space without stretching */
-    border-radius: 10px;
-  }
-  
-  .project-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .project-card:hover .overlay {
-    opacity: 1;
-  }
-  
-  .overlay a {
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    font-weight: bold;
-    background: #ff9800;
-    padding: 10px 15px;
-    border-radius: 5px;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Responsive grid */
+  gap: 30px;
+  padding: 20px;
+  justify-content: center;
+}
 
-  .text{
-    border:2px solid orange;
-    border-top:none;
-    font-weight:bold;
-    color:orange;
-    font-size:30px;
+.project-card {
+  position: relative;
+  width: 100%;
+  max-width: 350px; /* Increased max width for better display */
+  height: 280px; /* Increased height for better title visibility */
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  background:#333; /* Dark background for contrast */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
 
+.project-card img {
+ 
+  width: 100%;
+  height: 200px; /* Ensures all images are the same height */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.project-title {
+  color:white;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay a {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  background: #ff9800;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-  p{
-    color:orange;
-  }
-  .project-title {
-    margin: 10px 0; /* Add some space above and below the title */
-    font-size: 1.2em; /* Adjust font size as needed */
-  }
-  
+}

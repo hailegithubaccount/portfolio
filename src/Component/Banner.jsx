@@ -25,7 +25,10 @@ function Banner() {
        
       </div>
       <div className={`main-right ${isSwapped ? 'visible' : ''}`}>
+        <img src="src/assets/hero_image_back.png" alt="Banner" className='banner-image1' />
         <img src="src/assets/one.png" alt="Banner" className='banner-image' />
+    
+       
       </div>
     </div>
   );

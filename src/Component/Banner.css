@@ -1,12 +1,9 @@
 .main {
 
   display: flex;
-  background-color: black;
-  width: 100%;
-  height: 400px;
   flex-wrap: wrap;
   transition: transform 0.5s ease;
-  margin-bottom:600px;
+  margin-bottom:100px;
 
 }
 
@@ -64,11 +61,20 @@
 }
 
 .banner-image {
-  width: 500px;
+  margin-top:20px;
+  width: 400px;
   height: auto; 
+
+}
+.banner-image1{
+  width:280px;
+  height:auto;
+  margin-right:-190px;
+
+  
 }
 .banner-image:hover{
-  width: 550px;
+  width: 410px;
   
 }
 
@@ -113,7 +119,7 @@ p {
 
   .main-left, .main-right {
     flex: none;
-    width: 100%;
+    width: auto;
   }
 
   .main-left {

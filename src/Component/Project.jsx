@@ -4,6 +4,8 @@ import project1 from "../assets/azmeraTrade.jpg";
 import project2 from "../assets/netflix.jpg";
 import project3 from "../assets/smartmenu.jpg";
 import project4 from "../assets/studynest.jpg";
+import project5 from "../assets/fitclub.png";
+import project6 from "../assets/forHotel.png";
 
 const Project = () => {
   const projects = [
@@ -31,11 +33,23 @@ const Project = () => {
       title: "Study Nest",
       github: "https://github.com/user/project4",
     },
+    {
+      id: 5,
+      image: project5,
+      title: "fitclub",
+      github: "https://github.com/user/project4",
+    },
+    {
+      id: 6,
+      image: project6,
+      title: "Hotel Website",
+      github: "https://github.com/user/project4",
+    },
   ];
 
   return (
     <div>
-      <div className="text">My Projects</div>
+      <div className="tsuf">My Projects</div>
 
       <div className="projects-grid">
         {projects.map((project) => (

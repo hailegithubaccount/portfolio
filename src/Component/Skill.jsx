@@ -14,7 +14,7 @@ import './Skill.css'; // Import your CSS file
 const Skills = () => {
   return (
     <div>
- <div className='text'>skills</div>
+ <div className='tsuf'>skills</div>
     <div className="skills-section">
       <div className="skill">
         <img src={git} alt="React" className="skill-image" />
