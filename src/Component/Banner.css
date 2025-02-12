@@ -1,20 +1,16 @@
 .main {
-
   display: flex;
   flex-wrap: wrap;
   transition: transform 0.5s ease;
-  margin-bottom:100px;
-
-}
-.Haile{
-  color:orange;
-  
-
-
+  margin-bottom: 100px;
 }
 
-span{
-  font-size:50px;
+.Haile {
+  color: orange;
+}
+
+span {
+  font-size: 50px;
 }
 
 .main-left, .main-right {
@@ -26,70 +22,69 @@ span{
 }
 
 .main-left {
-  display:flex;
-  flex-direction:column;
-   
+  display: flex;
+  flex-direction: column;
 }
+
 .main-left h1 {
   width: 100%;
-  margin-right: 40px;
-  margin-left: 20px;
+  margin: 20px;
   font-size: 30px;
   font-weight: 500;
-  color:white;
+  color: white;
   text-align: center;
   letter-spacing: 0.5px;
-
-  
 }
 
 .main-left p {
   width: 100%;
-  margin-right: 40px;
-  margin-left: 40px;
+  margin: 20px;
   font-size: 25px;
   font-weight: 500;
   color: orange;
   text-align: center;
   letter-spacing: 0.5px;
-
-  
-
 }
-.btn{
-  background-color:orange;
-  color:white;
-  font-size:20px;
-  padding:10px;
-  border:none;
-  border-radius:5px;
 
+.btn {
+  background-color: orange;
+  color: white;
+  font-size: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  width: fit-content;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.btn:hover{
-  background-color:white;
-  color:orange;
+
+.btn:hover {
+  background-color: white;
+  color: orange;
 }
 
 .banner-image {
-  margin-top:20px;
+  margin-top: 20px;
   width: 400px;
-  height: auto; 
-
+  height: auto;
 }
-.banner-image1{
-  width:280px;
-  height:auto;
-  margin-right:-190px;
 
-  
+.banner-image1 {
+  width: 280px;
+  height: auto;
+  margin-right: -190px;
 }
-.banner-image:hover{
+
+.banner-image:hover {
   width: 410px;
-  
 }
 
 .main-right {
-  background-color: black ;
+  background-color: black;
   padding: 20px;
 }
 
@@ -118,26 +113,63 @@ p {
 }
 
 .swapped {
-  flex-direction: row-reverse; /* Swap the order of children */
+  flex-direction: row-reverse;
 }
 
+/* === 🛠 MOBILE RESPONSIVENESS === */
 @media (max-width: 768px) {
   .main {
+    width: 100%;
     flex-direction: column;
     height: auto;
+    padding: 20px;
   }
 
-  .main-left, .main-right {
-    flex: none;
+  .banner-image,
+   {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  .btn {
     width: auto;
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  span {
+    font-size: 24px;
+  }
+
+  .main-left h1 {
+    font-size: 18px;
+  }
+
+  .main-left p {
+    font-size: 16px;
+  }
+
+  .main-left, 
+  .main-right {
+    flex: none;
+    width: 100%;
+    text-align: center;
   }
 
   .main-left {
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 10px;
   }
 
   .banner-image {
     max-width: 90%;
+  }
+  .banner-image1{
+    display:none;
+
   }
 }
