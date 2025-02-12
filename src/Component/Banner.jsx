@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import "./Banner.css";
+import { ReactTyped } from "react-typed";
+
 
 function Banner() {
   const [isSwapped, setIsSwapped] = useState(false);
@@ -12,13 +14,17 @@ function Banner() {
     <div className={`main ${isSwapped ? 'swapped' : ''}`} onClick={handleClick}>
       <div className={`main-left ${isSwapped ? 'hidden' : ''}`}>
         
-                            <h1>About me</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore corrupti est r
-          ecusandae asperiores accusamus ipsum delectus rem voluptatem, laborum quaerat
-           nam repudiandae elige#
-          ndi excepturi vitae error doloremque magnam soluta odit?
-
-        </p>
+              <h1><span>
+                Hello! I'm <ReactTyped
+      className="Haile"
+      strings={["Haile Michael Eshetu", "", ""]}
+      typeSpeed={50}
+      backSpeed={30}
+      loop
+    /></span> 
+    <h2> I am a React Native and React (Vite) Developer</h2>
+    </h1>
+       
         <button className='btn'>
           read more
         </button>

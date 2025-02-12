@@ -1,0 +1,107 @@
+.Sboth{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+
+    background-color:#28282B;
+    width:cover;
+    height:500px;
+
+    
+}
+.container {
+    margin-left: 10rem;
+    margin-top:5rem;
+    position: relative;
+    width: 300px; /* Adjust container width */
+    height: 400px; /* Adjust container height */
+  }
+  
+  .rectangle1,
+  .rectangle2,.small-image,.medium-image,.large-image{
+    position: absolute;
+    width: 200px; /* Adjust rectangle width */
+   
+  }
+  
+  .rectangle1 {
+    height: 230px; /* Adjust height of the first rectangle */
+    border: 2px solid orange; /* Background color for the first rectangle */
+    z-index: 1; /* Set z-index higher to make it appear behind the second rectangle */
+  }
+  
+  .rectangle2 {
+    height: 250px; /* Adjust height of the second rectangle */
+    background-color: orange; /* Background color for the second rectangle */
+    top: 50px; /* Adjust top position to overlap the first rectangle */
+    left: 50px; /* Adjust left position to overlap the first rectangle */
+    z-index: 2; /* Set z-index lower to make it appear in front of the first rectangle */
+  }
+  .container>timage1{
+    
+    width:200px;
+    height:250px ;
+    z-index: 3;
+    top:20px;
+    left:30px;
+  }
+  
+ 
+  
+  .icon1s{
+    margin-top:20rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+  }
+  .SText>p:nth-of-type(1){
+    color: white;
+  }
+  .SText>h2:nth-child(2){
+    font-size: 3rem;
+   
+  }
+  .SText>h2:nth-child(3){
+    font-size: 3rem;
+   
+  }
+  .SText>h7>span:nth-of-type(1){
+    color:white;
+  }
+  
+  .small-image {
+    width:200px;
+    height:250px ;
+    z-index: 3;
+    top:20px;
+    left:30px; /* Define the width for small images */
+}
+
+.medium-image {
+  width:200px;
+  height:250px ;
+  z-index: 3;
+  top:20px;
+  left:30px; /* Define the width for medium images */
+}
+
+.large-image {
+  width:200px;
+  height:250px ;
+  z-index: 3;
+  top:20px;
+  left:30px;
+/* Define the width for large images */
+}
+.sentence{
+    margin-left:300px;
+    font-size:25px;
+  
+}
+.SH2{
+    font-size:30px;
+    margin-top:5rem;
+    margin-left:300px;
+    color:orange;
+    font-weight:bold;
+
+}

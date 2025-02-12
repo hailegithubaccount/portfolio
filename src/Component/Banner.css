@@ -6,6 +6,16 @@
   margin-bottom:100px;
 
 }
+.Haile{
+  color:orange;
+  
+
+
+}
+
+span{
+  font-size:50px;
+}
 
 .main-left, .main-right {
   flex: 1;
