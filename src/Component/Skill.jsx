@@ -17,20 +17,9 @@ import './Skill.css'; // Import your CSS file
 const Skills = () => {
   return (
     <div>
- <div className='tsuf'>skills</div>
+ <div className='tsuf'>My skills</div>
     <div className="skills-section">
-    <div className="skill">
-        <img src={html} alt="CSS" className="skill-image" />
-        <h3>HTML</h3>
-      </div>
-      <div className="skill">
-        <img src={css} alt="CSS" className="skill-image" />
-        <h3>CSS</h3>
-      </div>
-      <div className="skill">
-        <img src={js } alt="CSS" className="skill-image" />
-        <h3>JS</h3>
-      </div>
+    
       <div className="skill">
         <img src={ reactnative} alt="CSS" className="skill-image" />
         <h3>react-native</h3>
@@ -59,6 +48,18 @@ const Skills = () => {
       <div className="skill">
         <img src={githb} alt="CSS" className="skill-image" />
         <h3>github</h3>
+      </div>
+      <div className="skill">
+        <img src={html} alt="CSS" className="skill-image" />
+        <h3>HTML</h3>
+      </div>
+      <div className="skill">
+        <img src={css} alt="CSS" className="skill-image" />
+        <h3>CSS</h3>
+      </div>
+      <div className="skill">
+        <img src={js } alt="CSS" className="skill-image" />
+        <h3>JS</h3>
       </div>
      
       

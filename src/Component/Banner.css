@@ -55,20 +55,7 @@ span {
   margin-top: 10px;
 }
 
-.btn {
-  background-color: orange;
-  color: white;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
 
-.btn:hover {
-  background-color: white;
-  color: orange;
-}
 
 .main-right {
   flex: 1;
@@ -128,10 +115,6 @@ span {
     font-size: 18px;
   }
 
-  .btn {
-    font-size: 16px;
-    padding: 10px 20px;
-  }
 
   .banner-image {
     width: 100%;

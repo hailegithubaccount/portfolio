@@ -71,6 +71,34 @@
   padding: 8px 12px;
   border-radius: 5px;
 }
+.overlay {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.overlay a {
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.live-preview {
+  background-color: #28a745; /* Green */
+  color: white;
+}
+
+.github-link {
+  background-color: #24292e; /* GitHub Black */
+  color: white;
+}
+
+.overlay a:hover {
+  opacity: 0.8;
+}
+
 
 @media (max-width: 768px) {
   .projects-grid {
