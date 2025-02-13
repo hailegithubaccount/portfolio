@@ -27,7 +27,7 @@
 }
 
 span {
-  font-size: 50px;
+  font-size: 20px;
 }
 
 .main-left {
@@ -91,6 +91,7 @@ span {
 /* Responsive Design */
 @media (max-width: 760px) {
   .main {
+    width:100px;
     flex-direction: column;
     text-align: center;
     height:600px;
@@ -98,7 +99,7 @@ span {
 
   .main-left, 
   .main-right {
-    width: 100%;
+    margin-left:-100px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -108,17 +109,24 @@ span {
   }
 
   .main-left h1 {
-    font-size: 24px;
+    font-size: 1px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .main-left h2 {
-    font-size: 18px;
+    font-size:15px;
+    padding:30px;
+    
   }
 
 
+
   .banner-image {
-    width: 100%;
+    width: 90%;
     max-width: 300px;
+    
   }
 
   .banner-image1 {

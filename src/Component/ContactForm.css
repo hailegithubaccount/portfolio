@@ -62,7 +62,21 @@ form {
   @media (max-width: 768px) {
     .contact{
 
-      margin-left:20rem;
+      margin-left:0rem;
+      font-size:30px;
     
     }
+    form {
+      display: flex;
+      flex-direction: column;
+      width:30%;
+   
+      margin-left:-10rem;
+      
+    }
+    input,
+  textarea {
+    
+    width: 300px;
+    
   }
