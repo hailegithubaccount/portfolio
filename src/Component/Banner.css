@@ -99,7 +99,7 @@ span {
 
   .main-left, 
   .main-right {
-    margin-left:-100px;
+    margin-left:-200px;
     justify-content: center;
     align-items: center;
     text-align: center;
