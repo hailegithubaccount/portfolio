@@ -91,22 +91,38 @@ span {
 /* Responsive Design */
 @media (max-width: 760px) {
   .main {
-    width:100px;
-    flex-direction: column;
-    text-align: center;
-    height:600px;
-  }
-
-  .main-left, 
-  .main-right {
-    margin-left:-200px;
+    width: 100%; /* Set full width */
+    height: 600px;
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the order */
     justify-content: center;
     align-items: center;
     text-align: center;
-  }
-  .main-right{
-    
-  }
+    gap: 20px; /* Adds spacing between elements */
+}
+
+.main-left, 
+.main-right {
+    width: 80%; /* Ensure both sections take up proper space */
+    max-width: 400px; /* Prevents elements from becoming too wide */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Add some spacing */
+  /* Add a background to see separation */
+    border-radius: 8px; /* Optional: Rounded corners for better UI */
+}
+.main-right{
+  width: 60%;
+
+}
+
+.main-left {
+  
+
+}
+
 
   .main-left h1 {
     font-size: 1px;
@@ -123,8 +139,10 @@ span {
 
 
 
-  .banner-image {
-    width: 90%;
+  .banner-image{
+   
+    width: 60%;
+    height:auto;
     max-width: 300px;
     
   }
@@ -132,7 +150,5 @@ span {
   .banner-image1 {
     display: none;
   }
-  .btn{
-    display:block;
-  }
+
 }

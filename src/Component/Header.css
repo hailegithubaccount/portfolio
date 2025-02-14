@@ -11,6 +11,7 @@
   top: 0;
   left: 0;
   z-index: 1000;
+ 
 }
 
 .logo {
@@ -85,4 +86,12 @@
     width: 100%;
     padding: 10px 0;
   }
+}
+@media (max-width: 760px) {
+  .navbar {
+    margin-top:-40px;
+    
+    
+    
+}
 }

@@ -68,10 +68,25 @@ function Banner() {
         <h2>I am a React Native and React (Vite) Developer</h2>
 
         {/* Button to Download CV */}
-        <button className='btn' onClick={handleDownload}
-          style={{ backgroundColor: "red", color: "white", width:"20px"}}>
-           CV
-        </button>
+        <button 
+  className="btn" 
+  onClick={handleDownload}
+  style={{ 
+    backgroundColor: "red", 
+    color: "white", 
+    width: "100px", 
+    height: "40px",
+    display: "flex", 
+    justifyContent: "center", 
+    alignItems: "center", 
+    border: "none", 
+    borderRadius: "5px", 
+    cursor: "pointer", 
+    margin: "auto"  /* This centers it inside its flex container */
+  }}>
+  CV
+</button>
+
       </div>
       
       {/* Right Side with Images */}
