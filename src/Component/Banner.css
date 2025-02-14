@@ -46,6 +46,7 @@ span {
 .main-left {
   flex-direction: column;
   text-align: left;
+  margin-top:10rem;
 }
 
 .main-left h1 {
@@ -64,6 +65,7 @@ span {
 
 /* Image Section */
 .main-right {
+  
   justify-content: center;
   position: relative;
 }
@@ -73,15 +75,21 @@ span {
   width: 400px;
   height: auto;
   transition: transform 0.3s ease;
+  position:absolute;
 }
 
 .banner-image:hover {
   transform: scale(1.05);
 }
+.banner-image1{
+  margin-top: 60px;
+  margin-left:-20rem;
+  width: 300px;
+  height: auto;
 
-.banner-image1 {
-  display: none; /* Hidden by default unless needed */
 }
+
+
 
 /* 🔹 Responsive Design for Mobile */
 @media (max-width: 760px) {
@@ -122,5 +130,9 @@ span {
   .main-left h2 {
       font-size: 18px;
       padding: 20px;
+  }
+  .banner-image1{
+    width:50%;
+    margin-left:-150px;
   }
 }

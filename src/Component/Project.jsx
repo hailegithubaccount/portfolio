@@ -59,7 +59,7 @@ const Project = () => {
       <div className="projects-grid">
         {projects.map((project) => (
           <div key={project.id} className="project-card">
-            <img src={project.image} alt={`Project ${project.id}`} />
+            <img src={project.image} alt={`Project ${project.id}`} className="image"/>
             <h3 className="project-title">{project.title}</h3>
             <div className="overlay">
               <a href={project.live} target="_blank" rel="noopener noreferrer" className="live-preview">
