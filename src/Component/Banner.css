@@ -86,7 +86,7 @@ span {
 /* 🔹 Responsive Design for Mobile */
 @media (max-width: 760px) {
   .main {
-      width: 100%;
+      width: 90%;
       height: auto; /* Allow height to adjust based on content */
       display: flex;
       flex-direction: column-reverse; /* Image on top, text below */
