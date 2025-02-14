@@ -62,16 +62,16 @@ form {
   @media (max-width: 768px) {
     .contact{
 
-      margin-left:0rem;
+      margin-left:1rem;
       font-size:30px;
     
     }
     form {
       display: flex;
       flex-direction: column;
-      width:30%;
+      width:20%;
    
-      margin-left:-10rem;
+      margin-left:-13rem;
       
     }
     input,
@@ -80,3 +80,11 @@ form {
     width: 300px;
     
   }
+  .btn{
+   
+    margin-left:17rem;
+    width:150px;
+    font-size:15px;
+  
+  }
+}
