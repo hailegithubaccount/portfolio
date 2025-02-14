@@ -1,44 +1,51 @@
-/* make variables */
 :root {
-    --lightgray: #D9D9D9;
-    --gray: #9c9c9c;
-    --orange: #f48915;
-    --darkGrey: #464D53;
-    --caloryCard: #656565;
-    --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
-    --appColor:  #3c3f45;
-  }
-  
+  --lightgray: #D9D9D9;
+  --gray: #9c9c9c;
+  --orange: #f48915;
+  --darkGrey: #464D53;
+  --caloryCard: #656565;
+  --planCard: linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%);
+  --appColor:  #3c3f45;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; /* Ensure background covers full page */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.all {
+  background-color: black;
+  border-right:2px solid white;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  overflow: hidden;
+  min-height: 100vh; /* Ensures it covers the full viewport */
+  width: 100%;
+  position: relative; /* Change from absolute to relative */
+  mix-blend-mode: normal; /* Remove overlay if unnecessary */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.stroke-text {
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+}
+
+@media (max-width: 760px) {
   .all {
-   background-color:black;
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-     /* Add some padding to your content */
-    color: #ffffff;
-    mix-blend-mode: overlay;
-  
-    display: flex;
-    flex-direction: column;
-    gap: 6rem;
-    overflow: hidden;
-    position: absolute;
+      width: 100%;
+      height: auto;
+      background-color: black; /* Fix typo "bala" to "black" */
   }
-  ::-webkit-scrollbar{
-    display: none;
-  }
-  .stroke-tetx{
-    color: transparent;
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-text-stroke-width: 1px;
-     -webkit-text-stroke-color:white;
-  }
-  
-  @media (max-width: 760px) {
-
-   .all{
-    
-    width:450px;
-
-  }
-  }
+}

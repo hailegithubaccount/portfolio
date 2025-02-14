@@ -132,4 +132,7 @@ span {
   .banner-image1 {
     display: none;
   }
+  .btn{
+    display:block;
+  }
 }

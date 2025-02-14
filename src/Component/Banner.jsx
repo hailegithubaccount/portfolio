@@ -68,8 +68,9 @@ function Banner() {
         <h2>I am a React Native and React (Vite) Developer</h2>
 
         {/* Button to Download CV */}
-        <button className='btn' onClick={handleDownload}>
-          Download CV
+        <button className='btn' onClick={handleDownload}
+          style={{ backgroundColor: "red", color: "white", width:"20px"}}>
+           CV
         </button>
       </div>
       
